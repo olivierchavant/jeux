@@ -1,0 +1,44 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;0,900;1,700;1,900&display=swap');
+ 
+header { background-color: rgb(7, 4, 12);
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+main { background-image: linear-gradient(to right, rgb(194, 189, 189) , rgb(218, 218, 247)) ;
+    
+    padding: 10px;
+    margin: 30px;
+    
+    -webkit-box-shadow: 4px 4px 17px 7px #000000;
+    -moz-box-shadow: 4px 4px 17px 7px #000000;
+    box-shadow: 4px 4px 17px 7px #000000;
+}
+
+
+#result1, #result2 {  
+            background-color: rgb(42, 22, 131);
+            color: white}
+#jouer:hover, #go1:hover, #newgame:hover {
+    background: red;
+    color: white;}
+#jouer,  #go1, #newgame, #global1, #global2 { color: red;}
+
+
+#global1 ,#global2, #result1, #result2, #go1, #jouer, #tour1, #tour2 , #centrer, #mycanevas, #newgame, #J1,#J2 ,#hide { 
+    font-family: 'Lato', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align:center;
+    font-weight: bold;
+    font-size: 1.5rem;
+     }
+
+@media screen and (min-width:720px){
+    #global1 ,#global2, #result1, #result2, #go1, #jouer, #tour1, #tour2 , #centrer, #mycanevas, #newgame, #J1,#J2 {
+        font-size: 2rem;
+      font-family: 'Lato', sans-serif;
+      font-weight:lighter;
+    }}

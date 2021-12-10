@@ -4,12 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css"> 
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+  
     <title>jeux </title>
 </head>
 <body>
+    <div class="modal fade" id="reglesdujeu" tabindex="-1" role="dialog" aria-labelledby="informations" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="infos">règles du jeux </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <article id= "informations">
+                  <H2> règles du jeux  </H2> 
+                    Chaque joueur lance le dé et cumule des points, il peut a tout moment décider de récupérer les points ou relancer le dé pour tenter de cumuler plus de points avant 
+                    de les récupérer. ATTENTION si le dé affiche 1 le score cumulé passe a 0 et c'est le tour du second joueur. Le premier des deux qui atteint 100 points à GAGNE !!!
+               </article>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <header class="container-fluid " >
+        <a href="#" id = "Rdj" data-toggle="modal"  data-target="#reglesdujeu"> règles du jeu </a>
+    </header>
+    <div class="row"> 
+        
+       
+        <a type="button" id = "newgame"> Nouvelle partie </a> 
 
-
+    </div>
+    <main id = "hide">  
+        
+        <div class="row">
+            <div class="col-sm-6" id = "joueur1">
+                <h2 id ='J1' > Joueur 1 </h2>
+                <div id = "global1"> 0 </div>
+                <div id = 'tour1'> Points Cumulés </div> 
+                <div class="col-sm-2"id = "result1"> 0 </div>
+            </div>
+            <div class="col-sm-6" id = "joueur2">
+                <h2 id="J2"> Joueur 2 </h2>
+                <div id = "global2">0</div>
+                <div id = 'tour2'> Points Cumulés  </div> 
+                <div class="col-sm-2"id = "result2"> 0 </div>
+            </div>
+        </div>
+        <div class="row " > <canvas id= "mycanevas" height = "135px" width="130px"> </canvas> </div>
+        <div class= "row "> 
+            <div class = "col-sm-12  " id = "centrer"> <a id = "jouer" type="button" > Récupérer les points </a> </div>
+        </div>
+        <div class="row ">  <div class = "col-sm-12  " id = "centrer"> <a id = "go1" type="button" > Lancer le dé  </a> </div>
+        </div>
+    </main>
+    <footer>
 <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
